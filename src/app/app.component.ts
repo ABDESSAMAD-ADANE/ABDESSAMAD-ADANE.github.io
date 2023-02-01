@@ -16,7 +16,9 @@ export class AppComponent {
   addOperator(operator: string) {
     this.expression += operator;
   }
-
+ reset(){
+    this.expression=''
+  }
   calculate() {
     this.expression = eval(this.expression);
   }
